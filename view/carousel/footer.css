@@ -1,0 +1,25 @@
+@font-face{
+  font-family: myFirstFont;
+  src: url(../assets/fonts/Alegreya-Regular.ttf);
+}
+
+body{
+    font-family :myFirstFont ;
+}
+#alaberfooter{
+    color:#fff !important;
+}
+#alaberfooter h2{
+    font-family:myFirstFont ;
+    color:#fff !important;
+}
+#alaberfooter p{
+     font-family:myFirstFont ;
+    color:#fff ;
+}
+#alaberfooter a{
+     font-family:myFirstFont ;
+    color: #fff ;
+    text-decoration:none;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- <div class="ll">
+        <a href="#"><img src="img/logo1 - Copy.png" alt=""></a>
+    </div> -->
+    <header>
+        <a href="#" class="logo"><img src="img/logo1.png" alt="" style="width:200px;height:60px;"></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </header>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-data">
+                    <h1>This is Slide # 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <h1>This is Slide # 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+                    <button>COMMENT</button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <h1>This is Slide # 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam fuga voluptatem voluptas illum deserunt soluta quasi ipsam quam qui eligendi autem laudantium inventore, voluptatibus blanditiis nobis, tempora architecto atque.</p>
+                    <button>SHARE</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="arrows prev" onclick="plusslide(-1)">
+            <span><i class="fas fa-angle-left"></i></span>
+        </button>
+        <button class="arrows next" onclick="plusslide(1)">
+            <span><i class="fas fa-angle-right"></i></span>
+        </button>
+
+        <div class="dots">
+            <span onclick="currentslide(1)"></span>
+            <span onclick="currentslide(2)"></span>
+            <span onclick="currentslide(3)"></span>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+    <script src="courser.js"></script>
+</body>
+</html>
